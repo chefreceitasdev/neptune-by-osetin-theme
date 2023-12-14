@@ -1,0 +1,187 @@
+*,
+*:before,
+*:after {
+    transition: all 0.5s ease;
+}
+
+#container-1,
+#container-2,
+#container-3,
+#container-4,
+#container-5 {
+    width: 100%;
+    max-width: 400px;
+    background: #FF6666;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#container-1.closed header {
+    cursor: pointer;
+}
+
+#container-2.closed header {
+    cursor: pointer;
+}
+
+#container-3.closed header {
+    cursor: pointer;
+}
+
+#container-4.closed header {
+    cursor: pointer;
+}
+
+#container-5.closed header {
+    cursor: pointer;
+}
+
+header {
+    cursor: pointer;
+}
+
+.toplikes-header {
+    width: 100%;
+    height: 250px;
+    /*background: center / contain;
+    background-size: auto;
+    /*background-image: url(https://3.bp.blogspot.com/-v7vHC8w2AKs/TbbD-X8BhTI/AAAAAAAAAJ4/LCcrwIaMgf0/s1600/Mint+Julep+glass+tools.jpg); */
+}
+
+.toplikes-title {
+    position: relative;
+    z-index: 1;
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 0px;
+    font-weight: 500;
+    text-shadow: 1px 1px 4px silver;
+}
+
+#container-1.closed .toplikes-title,
+#container-2.closed .toplikes-title,
+#container-3.closed .toplikes-title,
+#container-4.closed .toplikes-title,
+#container-5.closed .toplikes-title {
+    /* padding: 40px 20px 10px 20px; */
+    margin-top: -87px;
+    color: white;
+    border: none;
+}
+
+.toplikes-title:before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    text-shadow: 1px 1px 4px #ff6666;
+    opacity: 0;
+}
+
+#container-1.closed .toplikes-title:before,
+#container-2.closed .toplikes-title:before,
+#container-3.closed .toplikes-title:before,
+#container-4.closed .toplikes-title:before,
+#container-5.closed .toplikes-title:before {
+    opacity: 1;
+    text-shadow: 1px 1px 4px #ff6666;
+}
+
+.article-toplikes {
+    padding: 10px ​0px 0px ​20px;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+#container-1.closed .article-toplikes,
+#container-2.closed .article-toplikes,
+#container-3.closed .article-toplikes,
+#container-4.closed .article-toplikes,
+#container-5.closed .article-toplikes {
+    max-height: 0px;
+    padding: 10px ​0px 0px ​20px;
+    /* padding: 0 30px; */
+}
+
+.toplikes-status {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
+
+.toplikes-status>li {
+    list-style-type: none;
+    display: flex;
+    margin: 4px 0px;
+}
+
+.toplikes-status>li>.toplike-titulo {
+    width: 120px;
+    color: #000;
+}
+
+.toplikes-status>li>.toplike-status {
+    width: 15px;
+    color: #fff;
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.toplikes-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+    /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+
+.toplikes-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Button ir para a Receita */
+
+.toplikes-btn-icon {
+    position: relative;
+    top: 2px;
+}
+
+.div-recipe-template-snippet-button-chef-receitas {
+    font-family: inherit;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.link-recipe-template-snippet-button-chef-receitas {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(104, 161, 58);
+    background-color: rgb(238, 242, 77);
+    border-color: rgb(248, 231, 28);
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1210px) {
+    .toplikes-column {
+        padding: 0px;
+    }
+}
